@@ -4,14 +4,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        User user1 = new User("Spongebob");
+        Car car1 = new Car("Mustang", "Red");
+        Car car2 = new Car("Corvette", "Blue");
+        Car car3 = new Car("Charger", "Yellow");
 
-        System.out.println(user1.username);
-        System.out.println(user1.email);
-        System.out.println(user1.age);
+        Car[] cars = {car1,car2,car3};
 
+        for (Car car : cars) {
+            car.drive();
+        }
 
-
+//        for (int i = 0; i< cars.length;i++) {
+//            cars[i].drive();
+//        }
 
     }
 }
