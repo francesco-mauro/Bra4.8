@@ -4,19 +4,23 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Car car1 = new Car("Mustang", "Red");
-        Car car2 = new Car("Corvette", "Blue");
-        Car car3 = new Car("Charger", "Yellow");
+        Friend friend1 = new Friend("Spongebob");
+        Friend friend2 = new Friend("Patrick");
+        Friend friend3 = new Friend("Squidward");
 
-        Car[] cars = {car1,car2,car3};
+        System.out.println(friend1.name);
+        System.out.println(friend1.numOfFriends);
 
-        for (Car car : cars) {
-            car.drive();
-        }
+        System.out.println(friend2.name);
+        System.out.println(friend2.numOfFriends);
 
-//        for (int i = 0; i< cars.length;i++) {
-//            cars[i].drive();
-//        }
+        System.out.println(friend3.name);
+        System.out.println(friend3.numOfFriends);
+
+        System.out.println(Friend.numOfFriends);
+
+        Friend.showFriends();
+
 
     }
 }
