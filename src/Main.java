@@ -4,17 +4,14 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-    Dog dog = new Dog();
-    Cat cat = new Cat();
-    Plant plant = new Plant();
+        Person person1 = new Person("Tom" , "Riddle");
+        Student student1 = new Student("Harry", "Potter", 3.25);
 
-        System.out.println(dog.isAlive);
-        System.out.println(cat.isAlive);
-        System.out.println(cat.isAlive);
+        person1.showName();
+        student1.showName();
+        System.out.println(student1.gpa);
+        System.out.println(student1.first);
 
-        plant.photosynthesize();
-        dog.photosynthesize();
-
-
+        student1.showGPA();
     }
 }
