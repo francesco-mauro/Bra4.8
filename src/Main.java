@@ -6,6 +6,7 @@ public class Main {
 
         Person person1 = new Person("Tom" , "Riddle");
         Student student1 = new Student("Harry", "Potter", 3.25);
+        Employee employee1 = new Employee("Rubeus", "Hagrid", 50000);
 
         person1.showName();
         student1.showName();
@@ -13,5 +14,6 @@ public class Main {
         System.out.println(student1.first);
 
         student1.showGPA();
+        employee1.showSalary();
     }
 }
